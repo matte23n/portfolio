@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { initReactI18next } from 'react-i18next';
 import translationIT from './locales/it.json';
 import translationEN from './locales/en.json';
+import { ReactComponent as Avatar } from './avataaars.svg';
 
 
 // Initialize i18n
@@ -92,6 +93,9 @@ const Hero = () => {
     <section className="bg-gray-100 py-20 md:py-32">
       <div className="container mx-auto px-4 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('hero.greeting')}</h1>
+        <div className="mb-8 flex justify-center">
+          <Avatar />
+        </div>
         <p className="text-xl mb-8 max-w-2xl mx-auto">{t('hero.description')}</p>
         <a href="#contact" className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300">{t('hero.cta')}</a>
       </div>

@@ -18,6 +18,8 @@
     "projects.title": "My Projects",
     "projects.fitness": "Fitness App",
     "projects.fitness.desc": "A platform for nutritionists and personal trainers to manage their clients' progress. Including a mobile app for clients to track their workouts and meals and incourage them making progresses. There couldn't miss the integration with smartwatches to facilitate workouts.",
+    "projects.bowlingsanlazzaro": "Bowling San Lazzaro Website",
+    "projects.bowlingsanlazzaro.desc": "Website for Bowling San Lazzaro, one of the biggest bowling in Italy",
     "about.title": "About Me",
     "about.p1": "I'm a full stack developer with 7 years of experience in the industry. My passion for technology drives me to continuously explore new frontiers of software development. Currently, I'm expanding my skills through a university program, balancing my practical experience with a solid theoretical foundation.",
     "about.p2": "In my free time, I'm dedicated to developing a fitness app using Flutter, combining my passion for programming with an interest in wellness.",

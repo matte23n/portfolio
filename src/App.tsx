@@ -108,6 +108,12 @@ interface SkillCardProps {
   description: string;
 }
 
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  link: string;
+}
+
 const SkillCard: React.FC<SkillCardProps> = ({ title, description }) => (
   <div className="bg-white p-6 rounded-lg shadow-md">
     <h3 className="text-xl font-semibold mb-2">{title}</h3>
@@ -140,11 +146,13 @@ const Skills = () => {
   );
 };
 
-const ProjectCard: React.FC<SkillCardProps> = ({ title, description }) => (
-  <div className="bg-white p-6 rounded-lg shadow-md">
-    <h3 className="text-xl font-semibold mb-2">{title}</h3>
-    <p>{description}</p>
-  </div>
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, link }) => (
+  <a href={link} target='_blank' rel="noreferrer" className="hover:shadow-lg transition duration-300">
+    <div className="bg-white p-6 rounded-lg shadow-md">
+      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <p>{description}</p>
+    </div>
+  </a>
 );
 
 const Projects = () => {
@@ -157,6 +165,12 @@ const Projects = () => {
           <ProjectCard
             title={t('projects.fitness')}
             description={t('projects.fitness.desc')}
+            link={'https://gympocket.it/'}
+          />
+          <ProjectCard
+            title={t('projects.bowlingsanlazzaro')}
+            description={t('projects.bowlingsanlazzaro.desc')}
+            link={'https://www.bowlingsanlazzaro.it/'}
           />
           {/* Add more ProjectCard components as needed */}
         </div>
